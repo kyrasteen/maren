@@ -1,0 +1,237 @@
+
+#cover{
+    width:60%;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    display: block;
+    margin:auto;
+    right:0;
+    left:0;
+}
+body#home{
+    background: url('profile.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    font-size: 62.5%;
+}
+body{
+    font-size: 62.5%;
+}
+body#bio{
+    font-size: 62.5%;
+}
+h1{
+    height: 2em;
+    text-align: left;
+    color:#7de8d3;
+    font-family: starsfromoureyes;
+    font-size: 5em;
+    opacity: 100%;
+    margin-bottom: 5px;
+}
+li{
+    text-align: center;
+    margin-top: -30px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: #d3e8e4;
+}
+li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4.2em;
+    color:white;
+    font-family: Arsenalewhite;
+    margin-bottom: 25px;
+}
+li:hover:not(#contact li){
+    background-image: url('underline.png');
+    background-size: 130px auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+}
+li:hover a{
+    color:#d3e8e4;
+}
+.active{
+    opacity: .50;
+}
+header{
+    margin-top: 420px;
+    position: fixed;
+}
+#fish{
+    float:right;
+    margin-right: -600px;
+    margin-top: 100px;
+    -webkit-filter: saturate(50%);
+    -moz-filter:saturate(50%);
+    -o-filter:saturate(50%);
+    -ms-filter:saturate(50%);
+    filter:saturate(50%);
+    opacity: .70;
+}
+#bio li a{
+    color:#02c6a1;
+}
+body#bio{
+    background-color:#7de8d3;
+}
+#contact li{
+    display: inline;
+}
+#boots{
+    width: 300px;
+    height: auto;
+    float:right;
+    margin-top:80px;
+}
+#bio h1{
+    color: white;
+}
+#coverPage a{
+    color:#02c6a1;
+    font-size: 1.7em;
+    font-family: starsfromoureyes;
+    float:right;
+    margin-right: 280px;
+    margin-top: 45px;
+    position:relative;
+    z-index: 100;
+}
+ a#art:hover + #cover{
+    -webkit-filter:hue-rotate(150deg);
+    -moz-filter:hue-rotate(150deg);
+    -ms-filter:hue-rotate(150deg);
+    -o-filter:hue-rotate(150deg);
+    filter:hue-rotate(150deg);
+
+}
+#contact{
+    background-color:#02c6a1;
+    font-size: 62.5%;
+}
+#birds{
+    width: 300px;
+    height: auto;
+    float:right;
+    margin-top: 50px;
+    display:inline;
+    position: relative;
+}
+form{
+    margin:5em;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: Arsenalewhite;
+    color: white;
+    display: inline;
+    position: absolute;
+    margin-top:10em;
+    margin-left: 8em;
+}
+input, textarea{
+    border:none;
+    outline: none;
+    border-bottom:1px solid white;
+    background:transparent;
+    text-decoration: none;
+    font-family: sans-serif;
+    color:#7de8d3;
+    resize:none;
+   /*use jquery to auto resize text area*/
+}
+textarea{
+    height: 50px;
+}
+form legend{
+    color:#7de8d3;
+    font-size: 7em;
+    text-align: center;
+    display: block;
+}
+label{
+    font-size: 4em;
+}
+button{
+    border:none;
+    background:none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 5em;
+    letter-spacing: 1.5px;
+}
+#nav-collapse{
+    display: none;
+}
+#nav-narrow{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+
+/*responsive*/
+@media screen and (max-width:775px){
+    #nav-collapse{
+    display: none;
+    }
+    #nav-narrow{
+    display: none;
+    }
+    .nav-toggle{
+    display: none;
+    }
+    #birds{
+        width:200px;
+        height: auto;
+        position: relative;
+        z-index: 20;
+        float:right;
+        margin-right: -70px;
+    }
+    form{
+        text-align: left;
+        position: absolute;
+        z-index: 0;
+    }
+    #name{
+        font-size: 2.3em;
+        margin-top: -60px;
+    }
+    li a{
+        margin: -10px;
+        display: inline;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width:530px){
+    #nav{
+        display: none;
+    }
+    #name a{
+        margin-top: -350px;
+        display: block;
+    }
+    #contact{
+        margin-top: 30px;
+    }
+    #birds{
+        display: block;
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
