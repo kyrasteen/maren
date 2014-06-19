@@ -6,21 +6,42 @@
 	<meta name="keywords" content="art, illustration, painting, drawings, notes">
 	<link rel="stylesheet" type="text/css" href="styles/marenstyle.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive-nav.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
     <body id='home' class='container'>
-        <header>
+    <img id='fish' src='img/fishtile.png' width='800px' height=auto;>
+       <footer class='sixteen columns'>
             <h1 id='name' class='sixteen columns'><a href='index.html'>M&auml;ren Burck</a></h1>
             <nav>
-                <ul>
-                    <li class="four columns alpha"><a href='bio.html'>bio</a></li>
-                    <li class="four columns alpha"><a href='portfolio.html'>portfolio</a></li>
-                    <li class="four columns alpha"><a href='contact.html'>contact</a></li>
-                     <li class="four columns omega"><a href='press.html'>press</a></li>
+                <ul id='nav' class='sixteen columns'>
+                    <li><a href='bio.html'>bio</a></li>
+                    <li><a href='portfolio.html'>portfolio</a></li>
+                    <li><a href='contact.html'>contact</a></li>
+                    <li><a href='press.html'>featured</a></li>
                 </ul>
             </nav>
-        </header>
-        <img id='fish' src='img/fishtile.png' width='800px' height=auto;>
+            <nav id='navNarrow'>
+                <ul id='nav-collapse'>
+                    <li><a class="four columns alpha" href='bio.html'>bio</a></li>
+                    <li><a class="four columns alpha" href='portfolio.html'>portfolio</a></li>
+                    <li><a class="four columns alpha active" href='contact.html'>contact</a></li>
+                    <li><a class="four columns omega" href='press.html'>press</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <a class='sixteen columns' target="_blank" href='http://peachesandporkchops.tumblr.com/'><img id='link' src='img/tumblr.gif' alt='tumblr' width='30px' height='auto'></a>
+
+        <!--responsive nav -->
+        <script src="js/responsive-nav.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //dropdown//
+        $("<select />").appendTo(".nav-collapse ul");
+    });
+    </script>
+    
     </body>
     <footer>
     </footer>

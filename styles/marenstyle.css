@@ -17,6 +17,7 @@ body#home{
     -o-background-size:cover;
     background-size: cover;
     font-size: 62.5%;
+    overflow: hidden;
 }
 body{
     font-size: 62.5%;
@@ -33,9 +34,38 @@ h1{
     opacity: 100%;
     margin-bottom: 5px;
 }
+#port div{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 170px;
+}
+
+#port footer{
+    background-color:white;
+    height: 170px;
+    position: fixed;
+    display: block;
+    bottom: 0px;
+}
+#port h1, #contact h1{
+    margin-top: 10px;
+}
 li{
     text-align: center;
-    margin-top: -30px;
+    margin-right: 15%;
+    text-decoration: none;
+    display: inline;
+}
+ul{
+    padding: 0px;
+    display: block;
+    text-align: center;
+    margin-top: -45px;
+}
+li:last-child{
+    margin-right:0px;
 }
 a{
     text-decoration: none;
@@ -46,18 +76,10 @@ a:hover{
 }
 li a{
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     font-size: 4.2em;
     color:white;
     font-family: Arsenalewhite;
-    margin-bottom: 25px;
-}
-li:hover:not(#contact li){
-    background-image: url('underline.png');
-    background-size: 130px auto;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-
 }
 li:hover a{
     color:#d3e8e4;
@@ -65,14 +87,18 @@ li:hover a{
 .active{
     opacity: .50;
 }
-header{
-    margin-top: 420px;
-    position: fixed;
+#link{
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    z-index: 300;
+    position: relative;
+    margin-top: -22px;
 }
 #fish{
     float:right;
-    margin-right: -600px;
-    margin-top: 100px;
+    padding-top: 40px;
+    margin-right:-600px;
     -webkit-filter: saturate(50%);
     -moz-filter:saturate(50%);
     -o-filter:saturate(50%);
@@ -80,11 +106,18 @@ header{
     filter:saturate(50%);
     opacity: .70;
 }
-#bio li a{
+#home a:hover
+#bio li a, #port li a{
     color:#02c6a1;
 }
 body#bio{
     background-color:#7de8d3;
+}
+#contact footer{
+    height: 170px;
+    position: fixed;
+    display: block;
+    bottom: 0px;
 }
 #contact li{
     display: inline;
@@ -98,8 +131,18 @@ body#bio{
 #bio h1{
     color: white;
 }
-#coverPage a{
+#bio p{
+    font-size: 1.3em;
     color:#02c6a1;
+    font-family: american typewriter;
+    padding-top: 140px;
+    line-height: 1.5em;
+}
+body#coverPage{
+    background-color:#02c6a1;
+}
+#coverPage a{
+    color:white;
     font-size: 1.7em;
     font-family: starsfromoureyes;
     float:right;
@@ -109,38 +152,51 @@ body#bio{
     z-index: 100;
 }
  a#art:hover + #cover{
-    -webkit-filter:hue-rotate(150deg);
+    -webkit-filter:brightness(150%);
     -moz-filter:hue-rotate(150deg);
     -ms-filter:hue-rotate(150deg);
     -o-filter:hue-rotate(150deg);
     filter:hue-rotate(150deg);
 
 }
+#port, #bio, #home{
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
+}
 #contact{
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
     background-color:#02c6a1;
     font-size: 62.5%;
 }
-#birds{
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+form #birds{
     width: 300px;
     height: auto;
     float:right;
-    margin-top: 50px;
+    margin-right: 50px;
+    margin-top: -400px;
     display:inline;
     position: relative;
 }
 form{
-    margin:5em;
     font-size: 2.5em;
     text-align: center;
     font-family: Arsenalewhite;
     color: white;
-    display: inline;
-    position: absolute;
+    display: block;
     margin-top:10em;
-    margin-left: 8em;
 }
 input, textarea{
     border:none;
+    text-align: left;
     outline: none;
     border-bottom:1px solid white;
     background:transparent;
@@ -161,20 +217,58 @@ form legend{
 }
 label{
     font-size: 4em;
+    text-align: left;
+    display: block;
+    padding-left: 4em;
 }
 button{
     border:none;
     background:none;
     outline: none;
-    color: inherit;
+    color: #dc5034;
     font-family: inherit;
-    font-size: 5em;
+    font-size: 5.5em;
     letter-spacing: 1.5px;
+    line-height: 1em;
+}
+button:hover + #birds{
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(189deg);
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    transition: transform 3s;
+    -webkit-transition: transform 3s;
+}
+.group{
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+}
+.group:hover{
+    opacity: .5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   -ms-transiton:opacity .25s ease-in-out;
+   -o-transition:opacity .25s ease-in-out;
+}
+figure{
+    display: inline;
+    margin:0px;
+}
+figcaption{
+    background-color: white;
+    width: 350px;
+    margin:auto;
+    display: block;
+    margin-top: -15px;
 }
 #nav-collapse{
     display: none;
 }
-#nav-narrow{
+#navNarrow{
     display: none;
 }
 .nav-toggle{
@@ -186,7 +280,7 @@ button{
     #nav-collapse{
     display: none;
     }
-    #nav-narrow{
+    #navNarrow{
     display: none;
     }
     .nav-toggle{
@@ -217,21 +311,35 @@ button{
 }
 
 @media screen and (max-width:530px){
-    #nav{
-        display: none;
-    }
-    #name a{
-        margin-top: -350px;
-        display: block;
-    }
     #contact{
         margin-top: 30px;
     }
     #birds{
         display: block;
-        margin-top: 350px;
+        margin-top: 130px;
         margin-left: auto;
         margin-right: auto;
+        width: 100px;
+        height:auto;
+        position: relative;
+    }
+}
+@media screen and (max-width:480px){
+    #name a{
+        margin-top: -350px;
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #birds{
+        float:right;
+        width: 75px;
+        height: auto;
+        margin-top: -20px;
+    }
+    legend{
+        padding-top: 80px;
     }
 }
 
