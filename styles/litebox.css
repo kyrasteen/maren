@@ -37,12 +37,11 @@
 
 	.litebox-overlay .litebox-nav {
 		display: none;
-		width: 100px;
-		height: 60px;
-		margin-top: -30px;
+		width: 150px;
+		height: 80px;
 		opacity: .2;
 		position: absolute;
-		top: 50%;
+		top: 20%;
 	}
 
 	.litebox-overlay .litebox-nav:hover {
@@ -51,13 +50,15 @@
 	}
 
 	.litebox-overlay .litebox-prev {
-		background: url('left.gif') no-repeat center;
+		background: url('right.png') no-repeat center;
+		background-size: 150px auto;
 		left: 20px;
 		opacity: 1;
 	}
 
 	.litebox-overlay .litebox-next {
-		background: url('right.gif') no-repeat center;
+		background: url('left.png') no-repeat center;
+		background-size: 150px auto;
 		right: 20px;
 		opacity: 1;
 	}

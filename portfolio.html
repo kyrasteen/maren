@@ -7,10 +7,13 @@
 	<meta-charset="utf-8">
 	<meta name="description" content="Illustrations, drawings, and paintings from the desk of Maren Burck">
 	<meta name="keywords" content="art, illustration, painting, drawings, notes">
+	<title>Portfolio</title>
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
 	<link rel="stylesheet" type="text/css" href="styles/marenstyle.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive-nav.css">
     <link rel='stylesheet' type 'text/css' href='styles/litebox.css'>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body class='container' id='port'>
@@ -18,6 +21,71 @@
 		<figure>
 			<a href='img/bw10.gif' alt='black and white design' target="_self" class='litebox' data-litebox-group='group-1'>
 				<img src='img/bw10.gif' alt='black and white ink design' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href="img/abstract.jpg" alt='design' target="_self" class="litebox" data-litebox-group='group-1'>
+				<img src='img/abstract.jpg' alt='design' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/banjo.jpg' alt='banjo' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src='img/banjo.jpg' alt='banjo' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/barnic.jpg' alt='barnicles' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src='img/barnic.jpg' alt='barnicles' class="group">
+			</a>
+		</figure>
+		<figure>
+			<a href='img/bear.jpg' alt='bear' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src='img/bear.jpg' alt='bear' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/captian.jpg' alt='drawing' target="_self" class="litebox" data-litebox-group='group-1'>
+				<img src='img/captian.jpg' alt='drawing' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/design.jpg' alt='design' target="_self" class="litebox" data-litebox-group='group-1'>
+				<img src='img/design.jpg' alt='design' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/genie.jpg' alt='genie' target="_self" class="litebox" data-litebox-group='group-1'>
+				<img src='img/genie.jpg' alt='genie' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/hawk.jpg' alt='hawk' target="_self" class="litebox" data-litebox-group="group-1">
+				<img src='img/hawk.jpg' alt='hawk' class="group">
+			</a>
+		</figure>
+		<figure>
+			<a href='img/rodent.jpg' alt='rodent' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src="img/rodent.jpg" alt='rodent' class="group">
+			</a>
+		</figure>
+		<figure>
+			<a href="img/skull.jpg" alt='skull' target="_self" class="litebox" data-litebox-group="group-1">
+				<img src='img/skull.jpg' alt='skull' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href='img/skull1.jpg' alt='skull' target="_self" class="litebox" data-litebox-group='group-1'>
+				<img src='img/skull1.jpg' alt='skull' class="group">
+			</a>
+		</figure>
+		<figure>
+			<a href='img/skull2.jpg' alt='skull' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src='img/skull2.jpg' alt='skull' class='group'>
+			</a>
+		</figure>
+		<figure>
+			<a href="img/swans.jpg" alt='swans' target="_self" class="litebox" data-litebox-group="group-1">
+				<img src='img/swans.jpg' alt='swans' class="group">
 			</a>
 		</figure>
 		<figure>
@@ -201,8 +269,8 @@
 			</a>
 		</figure>
 		<figure>
-			<a href='img/beard.gif' alt='design' target="_self" class='litebox' data-litebox-group='group-1'>
-				<img src='img/flamingo1.gif' alt='flamingo' class='group'>
+			<a href='img/flamingo.gif' alt='design' target="_self" class='litebox' data-litebox-group='group-1'>
+				<img src='img/flamingo.gif' alt='flamingo' class='group'>
 			</a>
 		</figure>
 		<figure>
@@ -216,24 +284,27 @@
 			</a>
 		</figure>
 	</div>
-	 <footer>
+	   <footer class='sixteen columns'>
             <h1 id='name' class='sixteen columns'><a href='index.html'>M&auml;ren Burck</a></h1>
-            <nav>
-                <ul id='nav' class='sixteen columns'>
+            <nav id='navMain'>
+                <ul class='sixteen columns'>
                     <li><a href='bio.html'>bio</a></li>
-                    <li><a class='active' href='portfolio.html'>portfolio</a></li>
+                    <li><a href='portfolio.html'>portfolio</a></li>
                     <li><a href='contact.html'>contact</a></li>
-                    <li><a href='press.html'>featured</a></li>
+                    <li><a href='featured.html'>featured</a></li>
                 </ul>
             </nav>
-            <nav id='navNarrow'>
-                <ul id='nav-collapse'>
-                    <li><a class="four columns alpha" href='bio.html'>bio</a></li>
-                    <li><a class="four columns alpha" href='portfolio.html'>portfolio</a></li>
-                    <li><a class="four columns alpha active" href='contact.html'>contact</a></li>
-                    <li><a class="four columns omega" href='press.html'>press</a></li>
+            <div id='navMod'>
+            <nav id='nav' class='nav-collapse'>
+                <ul>
+                    <li><a href='bio.html'>bio</a></li>
+                    <li><a href='portfolio.html'>portfolio</a></li>
+                    <li><a href='contact.html'>contact</a></li>
+                    <li><a href='featured.html'>featured</a></li>
                 </ul>
             </nav>
+            </div>
+            <a href="#" class="nav-toggle"></a>
         </footer>
 
         <!--lite box jquery-->
@@ -259,6 +330,10 @@
 	});
 
    </script>
+
+   <script>
+      var navigation = responsiveNav("#nav");
+    </script>
 
 <!---->
 	</body>

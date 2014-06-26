@@ -1,14 +1,15 @@
 
 #cover{
-    width:60%;
+    width:70%;
     height:auto;
     overflow: hidden;
     text-align: center;
-    position: fixed;
     display: block;
     margin:auto;
+    margin-top: 15px;
     right:0;
     left:0;
+    position: fixed;
 }
 body#home{
     background: url('profile.png') no-repeat center center fixed;
@@ -21,6 +22,8 @@ body#home{
 }
 body{
     font-size: 62.5%;
+    margin: 0;
+    padding: 0;
 }
 body#bio{
     font-size: 62.5%;
@@ -39,9 +42,8 @@ h1{
     margin-right: auto;
     display: block;
     text-align: center;
-    margin-bottom: 170px;
+    padding-bottom: 170px;
 }
-
 #port footer{
     background-color:white;
     height: 170px;
@@ -49,7 +51,7 @@ h1{
     display: block;
     bottom: 0px;
 }
-#port h1, #contact h1{
+#port h1, #name{
     margin-top: 10px;
 }
 li{
@@ -72,7 +74,7 @@ a{
     color: inherit;
 }
 a:hover{
-    color: #d3e8e4;
+    opacity: .7;
 }
 li a{
     text-decoration: none;
@@ -80,20 +82,10 @@ li a{
     font-size: 4.2em;
     color:white;
     font-family: Arsenalewhite;
-}
-li:hover a{
-    color:#d3e8e4;
+    margin-top: -40px;
 }
 .active{
     opacity: .50;
-}
-#link{
-    margin: 0px auto;
-    display: block;
-    text-align: center;
-    z-index: 300;
-    position: relative;
-    margin-top: -22px;
 }
 #fish{
     float:right;
@@ -106,7 +98,6 @@ li:hover a{
     filter:saturate(50%);
     opacity: .70;
 }
-#home a:hover
 #bio li a, #port li a{
     color:#02c6a1;
 }
@@ -127,44 +118,52 @@ body#bio{
     height: auto;
     float:right;
     margin-top:80px;
+    padding-right: 40px;
 }
 #bio h1{
     color: white;
 }
 #bio p{
-    font-size: 1.3em;
+    font-size: 1.6em;
     color:#02c6a1;
     font-family: american typewriter;
-    padding-top: 140px;
+    margin-top: 200px;
+    padding-left: 60px;
     line-height: 1.5em;
 }
 body#coverPage{
     background-color:#02c6a1;
 }
 #coverPage a{
-    color:white;
+    color:#7de8d3;
     font-size: 1.7em;
     font-family: starsfromoureyes;
     float:right;
-    margin-right: 280px;
+    margin-right: 15%;
     margin-top: 45px;
     position:relative;
     z-index: 100;
 }
  a#art:hover + #cover{
-    -webkit-filter:brightness(150%);
-    -moz-filter:hue-rotate(150deg);
-    -ms-filter:hue-rotate(150deg);
-    -o-filter:hue-rotate(150deg);
-    filter:hue-rotate(150deg);
+    -webkit-filter:brightness(50%);
+    -moz-filter:hue-rotate(50deg);
+    -ms-filter:hue-rotate(50deg);
+    -o-filter:hue-rotate(50deg);
+    filter:hue-rotate(50deg);
 
 }
-#port, #bio, #home{
+#port, #bio, #home, .litebox-overlay #nav{
     -webkit-animation: fadein 1.5s;
+    -moz-animation:fadein 1.5s;
+    -ms-animation:fadein 1.5s;
+    -o-animation:fadein 1.5s;
     animation: fadein 1.5s;
 }
 #contact{
     -webkit-animation: fadein 1.5s;
+    -moz-animation:fadein 1.5s;
+    -ms-animation:fadein 1.5s;
+    -o-animation:fadein 1.5s;
     animation: fadein 1.5s;
     background-color:#02c6a1;
     font-size: 62.5%;
@@ -174,6 +173,18 @@ body#coverPage{
     to {opacity: 1;}
 }
 @-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-ms-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-o-keyframes fadin {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -221,23 +232,32 @@ label{
     display: block;
     padding-left: 4em;
 }
-button{
+#button{
     border:none;
     background:none;
     outline: none;
-    color: #dc5034;
+    color: black;
     font-family: inherit;
     font-size: 5.5em;
     letter-spacing: 1.5px;
     line-height: 1em;
 }
-button:hover + #birds{
-    transform:rotateY(180deg);
+#button:hover + #birds{
+    transform:rotateY(189deg);
     -webkit-transform:rotateY(189deg);
+    -moz-transform:rotateY(189deg);
+    -ms-transform:rotateY(189deg);
+    -o-transform:rotateY(189deg);
     transform-style:preserve-3d;
     -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
     transition: transform 3s;
     -webkit-transition: transform 3s;
+    -moz-transition:transform 3s;
+    -ms-transition:transform 3s;
+    -o-transition:transform 3s;
 }
 .group{
     margin-right: 10px;
@@ -265,34 +285,55 @@ figcaption{
     display: block;
     margin-top: -15px;
 }
-#nav-collapse{
-    display: none;
-}
-#navNarrow{
-    display: none;
-}
 .nav-toggle{
+    display: none;
+}
+#navMain li{
+    display: inline;
+}
+.nav-collapse{
     display: none;
 }
 
 /*responsive*/
-@media screen and (max-width:775px){
-    #nav-collapse{
-    display: none;
+
+@media screen and (max-width: 960px){
+    #boots, #bio p{
+        padding:0px;
     }
-    #navNarrow{
-    display: none;
+    #coverPage #art{
+        display: block;
+        font-size:3.5em;
+        float:none;
+        text-align: center;
+        margin-top: 550px;
+        margin-right: 0px;
     }
-    .nav-toggle{
-    display: none;
+    #cover{
+        margin-top: -620px;
+        width:75%;
+        height: auto;
     }
-    #birds{
+}
+@media screen and (max-width:780px){
+    li{
+        margin-right: 5%;
+    }
+    #cover{
+        padding-top: 10px;
+        width: 98%
+    }
+     form #birds{
         width:200px;
         height: auto;
         position: relative;
         z-index: 20;
         float:right;
         margin-right: -70px;
+        margin-top: -275px;
+    }
+    label{
+        padding-left: 0px;
     }
     form{
         text-align: left;
@@ -300,37 +341,142 @@ figcaption{
         z-index: 0;
     }
     #name{
-        font-size: 2.3em;
-        margin-top: -60px;
+        font-size: 2.6em;
+        margin-top: 20px;
     }
-    li a{
-        margin: -10px;
-        display: inline;
-        line-height: 1.2em;
+    #nav li a{
+        font-size: 3.5em;
+    }
+    #bio p{
+        font-size: 1.3em;
+        width: 250px;
+        float:left;
+        margin-top: 100px;
+    }
+    #boots{
+        width:150px;
+        height: auto;
+        float:right;
+        margin-right: 0px;
+    }
+    .group{
+        height:auto;
+        width: 220px;
+        display: block;
+        margin:auto;
+        margin-top: 15px;
+    }
+    #contact{
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width:530px){
-    #contact{
-        margin-top: 30px;
+    #navMain{
+        display: none;
     }
-    #birds{
+    form #birds{
+        display: none;
+    }
+    #coverPage #art{
+        margin-top: 400px;
+    }
+    #cover{
+        padding-top: 150px;
+    }
+    .nav-toggle{
         display: block;
-        margin-top: 130px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100px;
-        height:auto;
-        position: relative;
+        margin-top: -490px;
+        float:right;
+        margin-right: 5%;
+    }
+    #port div{
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+    #port footer{
+        height: 0px;
+    }
+    #port #navMod{
+        margin-top: -620px;
+    }
+    #bio #name{
+        margin-top:-440px;
+        display: block;
+        text-align: center;
+    }
+     #port #name{
+        margin-top: -680px;
+        background-color: white;
+     }
+    #contact{
+        margin-top: 0px;
+    }
+    legend{
+        padding-top: 80px;
+    }
+    form label, form legend{
+        padding-left: 10px;
+    }
+    nav.nav-collapse{
+        width: 100%;
+        z-index: 300;
+        background-color:#7de8d3;
+        margin: auto;
+        margin-top: -440px;
+        padding-bottom:0px;
+    }
+    #bio nav.nav-collapse{
+        margin-top: -380px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .nav-collapse ul{
+        width: 100%
+        left:0;
+        right: 0;
+        margin: 0;
+    }
+    #contact .nav-collapse a:hover{
+        color:#7de8d3;
+    }
+    .nav-collapse a:hover{
+        background-color: white;
+    }
+    .nav-collapse li a{
+        display: block;
+        width: 100%;
+        margin-top:-15px;
     }
 }
 @media screen and (max-width:480px){
-    #name a{
-        margin-top: -350px;
-        display: block;
+    #navMod{
+        margin-top: -400px;
+        position: relative;
+        z-index: 299;
     }
-    #nav{
-        display: none;
+    #bio .nav-toggle{
+        display: inline;
+        margin-top: -420px;
+    }
+    .nav-toggle{
+        margin-top:0px; 
+    }
+    #coverPage #art{
+        margin-top: 350px;
+    }
+    #cover{
+        padding-top: 200px;
+    }
+    #contact #name{
+        margin-top: -500px;
+        font-size: 2.5em;
+        text-align: left;
+        position: relative;
+        z-index: 0;
+    }
+    #bio #name{
+        text-align: left;
     }
     #birds{
         float:right;
@@ -338,8 +484,29 @@ figcaption{
         height: auto;
         margin-top: -20px;
     }
-    legend{
-        padding-top: 80px;
+    #boots{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        float:none;
+    }
+    #bio p{
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-right: auto;
+        margin-left:auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    #coverPage #art{
+        margin-top: 260px;
+        font-size: 3em;
+    }
+    #cover{
+        padding-top: 310px;
     }
 }
 
