@@ -9,43 +9,26 @@
 	<link rel="stylesheet" type="text/css" href="styles/marenstyle.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive-nav.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <script type="text/javascript" src="js/responsive-nav.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 	<body id='contact' class='container'>
-    <?php
-    if (!isset($_POST["submit"])) {
-  ?>
-        <form id='contact' class='sixteen columns' action='<?php echo $_SERVER["PHP_SELF"];?>' method='post'>
+   
+        <form id='contact' class='sixteen columns' action="index.php" method='post'>
             <legend>Contact</legend>
                 <label>Name
-                    <input type='text' id='nombre' name="name">
+                    <input type='text' id='name' name="name">
                 </label><br>
                 <label>e-mail
-                    <input id="email" type='text' name="email">
+                    <input id="email" type='email' name="email">
                 </label><br>
                 <label>Comments or Questions
                     <textarea id='comments' type='text' name='message'></textarea>
                 </label>
-                <br><input id='button' name="submit" value="submit" type='submit'>
+                <br><input id='submit' name="submit" value="submit" type='submit'>
                 <img id='birds' class='sixteen columns' src="img/nativebird.png" alt='bird design'>
         </form>
-        <?php
-    } else {
-        if (isset($_POST["name"])) {
-    $name = $_POST["name"]; // sender
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    // message lines should not exceed 70 characters (PHP rule), so wrap it
-    $message = wordwrap($message, 70);
-    // send mail
-    mail("kyra.m.weber@gmail.com",$message,"From: $name\n");
-    echo "Thank you for dropping a line";
-  }
-}
-?>
-
 
         <footer class='sixteen columns'>
             <h1 id='name' class='sixteen columns'><a href='index.html'>M&auml;ren Burck</a></h1>
