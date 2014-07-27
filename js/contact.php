@@ -1,4 +1,5 @@
- // Here we get all the information from the fields sent over by the form.
+
+
 <?php
 
 $name = $_POST['name'];
