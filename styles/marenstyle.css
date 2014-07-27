@@ -295,7 +295,7 @@ figcaption{
     display: none;
 }
 #feature{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 /*responsive*/
@@ -318,7 +318,7 @@ figcaption{
         height: auto;
     }
 }
-@media screen and (max-width:780px){
+@media screen and (max-width:790px){
     li{
         margin-right: 5%;
     }
@@ -333,7 +333,7 @@ figcaption{
         z-index: 20;
         float:right;
         margin-right: -70px;
-        margin-top: -275px;
+        margin-top: -295px;
     }
     label{
         padding-left: 0px;
@@ -392,6 +392,8 @@ figcaption{
         margin-top: -490px;
         float:right;
         margin-right: 5%;
+        position: relative;
+        z-index: 500;
     }
     #port div{
         margin-top: 30px;
@@ -412,6 +414,9 @@ figcaption{
         margin-top: -680px;
         background-color: white;
      }
+    #contact #name{
+        margin-top: -500px;
+    }
     #contact{
         margin-top: 0px;
     }

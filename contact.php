@@ -14,23 +14,27 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 	<body id='contact' class='container'>
-        <form id='contact' class='sixteen columns' name='contact' action="js/contact.php" method='post'>
+       <div id="contact_form"> 
+        <form id='contact' class='sixteen columns' name='contact' action="" method=''>
             <legend>Contact</legend>
-                <label>Name
-                    <input type='text' id='name' name="name" required>
+                <label id="name_label">Name
+                    <input type='text' id='name' name="name">
                 </label><br>
+                <label class="error" for='name' id='name_error'>This field is required</label>
                 
                 <label id='email_label'>e-mail
-                    <input id="email" type='email' name="email" required>
+                    <input id="email" type='email' name="email">
                 </label><br>
+                <label class='error' for='email' id='email_error'>This field is required</label>
                 
                 <label id='comment_label'>Comments or Questions
-                    <textarea id='comments' type='text' name='comments' required></textarea>
+                    <textarea id='comments' type='text' name='message'></textarea>
                 </label>
-            
-                <br><input id='submit' class='submit' name="submit" value="submit" type='submit'>
+                <label class='error' for='comments' id='comments_error'>This field is required</label>
+                <br><input id='submit' name="submit" value="submit" type='submit'>
                 <img id='birds' class='sixteen columns' src="img/nativebird.png" alt='bird design'>
         </form>
+    </div>
 
         <footer class='sixteen columns'>
             <h1 id='name' class='sixteen columns'><a href='index.html'>M&auml;ren Burck</a></h1>
@@ -55,15 +59,12 @@
             <a href="#" class="nav-toggle"></a>
         </footer>
 
-         <script type="text/javascript" src="js/contact.js"></script>
-
         <!--responsive nav -->
     <script>
       var navigation = responsiveNav("#nav");
     </script>
 
 
-     
 <!--done-->
 
      </body>
