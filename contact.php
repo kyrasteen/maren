@@ -2,7 +2,7 @@
 
 <?php
 
-$name = $_POST['name'];
+$name = $_POST['names'];
 $email = $_POST['email'];
 $message = $_POST['comments'];
  

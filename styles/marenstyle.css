@@ -74,7 +74,7 @@ a{
     color: inherit;
 }
 a:hover{
-    opacity: .7;
+    opacity: .5;
 }
 li a{
     text-decoration: none;
@@ -295,7 +295,10 @@ figcaption{
     display: none;
 }
 #feature{
-    margin-top: 0px;
+    margin-top: 150px;
+}
+#feature img{
+    margin:15px;
 }
 
 /*responsive*/
@@ -372,6 +375,14 @@ figcaption{
     #contact{
         margin-top: 30px;
     }
+    #feature img{
+        width:300px;
+        height:auto;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
+    }
 }
 
 @media screen and (max-width:530px){
@@ -387,13 +398,21 @@ figcaption{
     #cover{
         padding-top: 150px;
     }
+    #port .nav-toggle{
+        margin-top:-680px;
+        margin-right:0;
+        margin-left:15px;
+    }
     .nav-toggle{
         display: block;
-        margin-top: -490px;
+        margin-top: -530px;
         float:right;
-        margin-right: 5%;
+        margin-right:0;
         position: relative;
         z-index: 500;
+    }
+    #bio .nav-toggle img{
+        margin-top:-30px;
     }
     #port div{
         margin-top: 30px;
@@ -403,22 +422,19 @@ figcaption{
         height: 0px;
     }
     #port #navMod{
-        margin-top: -620px;
+        margin-top: -630px;
     }
     #bio #name{
         margin-top:-440px;
         display: block;
         text-align: center;
     }
-     #port #name{
+    #port #name{
         margin-top: -680px;
         background-color: white;
      }
     #contact #name{
         margin-top: -500px;
-    }
-    #contact{
-        margin-top: 0px;
     }
     legend{
         padding-top: 80px;
@@ -426,10 +442,12 @@ figcaption{
     form label, form legend{
         padding-left: 10px;
     }
+    #home #name{
+        margin-top:-480px;
+    }
     nav.nav-collapse{
         width: 100%;
         z-index: 300;
-        background-color:#7de8d3;
         margin: auto;
         margin-top: -440px;
         padding-bottom:0px;
@@ -438,6 +456,13 @@ figcaption{
         margin-top: -380px;
         padding-top: 30px;
         padding-bottom: 30px;
+        background-color:#7de8d3;
+    }
+    #contact nav.nav-collapse{
+        background-color:#02c6a1;
+    }
+    #contact .nav-toggle{
+        margin-top:-110px;
     }
     .nav-collapse ul{
         width: 100%
@@ -448,13 +473,14 @@ figcaption{
     #contact .nav-collapse a:hover{
         color:#7de8d3;
     }
-    .nav-collapse a:hover{
-        background-color: white;
-    }
     .nav-collapse li a{
         display: block;
         width: 100%;
         margin-top:-15px;
+    }
+    #port ul{
+        background-color:white;
+        padding:10px;
     }
 }
 @media screen and (max-width:480px){
@@ -468,7 +494,10 @@ figcaption{
         margin-top: -420px;
     }
     .nav-toggle{
-        margin-top:0px; 
+        margin-top:-60px; 
+    }
+    .nav-toggle .active{
+        margin-top:-300px;
     }
     #coverPage #art{
         margin-top: 350px;
@@ -477,12 +506,13 @@ figcaption{
         padding-top: 200px;
     }
     #contact #name{
-        margin-top: -500px;
+        margin-top: -480px;
         font-size: 2.5em;
         text-align: left;
         position: relative;
         z-index: 0;
     }
+    
     #bio #name{
         text-align: left;
     }
