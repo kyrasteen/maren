@@ -36,6 +36,7 @@ h1{
     font-size: 5em;
     opacity: 100%;
     margin-bottom: 5px;
+    padding-bottom:10px;
 }
 #port div{
     margin-left: auto;
@@ -77,11 +78,12 @@ a:hover{
     opacity: .5;
 }
 li a{
+    padding-top:15px;
     text-decoration: none;
     display: inline;
-    font-size: 4.2em;
+    font-size: 3em;
     color:white;
-    font-family: Arsenalewhite;
+    font-family: Give You Glory, cursive;
     margin-top: -40px;
 }
 .active{
@@ -124,9 +126,9 @@ body#bio{
     color: white;
 }
 #bio p{
-    font-size: 1.6em;
+    font-size: 1.2em;
     color:#02c6a1;
-    font-family: american typewriter;
+    font-family: Give You Glory, cursive;
     margin-top: 200px;
     padding-left: 60px;
     line-height: 1.5em;
@@ -198,9 +200,9 @@ form #birds{
     position: relative;
 }
 form{
-    font-size: 2.5em;
+    font-size: 1em;
     text-align: center;
-    font-family: Arsenalewhite;
+    font-family: Give You Glory, cursive;
     color: white;
     display: block;
     margin-top:10em;
@@ -227,7 +229,7 @@ form legend{
     display: block;
 }
 label{
-    font-size: 4em;
+    font-size: 3em;
     text-align: left;
     display: block;
     padding-left: 4em;
@@ -299,6 +301,14 @@ figcaption{
 }
 #feature img{
     margin:15px;
+}
+#feature #link img:hover{
+    -webkit-filter:grayscale(80%) opacity(.5);
+    -moz-filter:grayscale(80%) opacity(.5);
+    -ms-filter:grayscale(80%) opacity(.5);
+    -o-filter:grayscale(80%) opacity(.5);
+    filter:grayscale(80%) opacity(.5);
+
 }
 
 /*responsive*/
@@ -414,6 +424,9 @@ figcaption{
     #bio .nav-toggle img{
         margin-top:-30px;
     }
+    #home .nav-toggle img{
+        margin-top:-26px;
+    }
     #port div{
         margin-top: 30px;
         padding-bottom: 0px;
@@ -461,8 +474,11 @@ figcaption{
     #contact nav.nav-collapse{
         background-color:#02c6a1;
     }
+    #contact #navMod{
+        margin-top:-450px;
+    }
     #contact .nav-toggle{
-        margin-top:-110px;
+        margin-top:-510px;
     }
     .nav-collapse ul{
         width: 100%
