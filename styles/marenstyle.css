@@ -27,6 +27,7 @@ body{
 }
 body#bio{
     font-size: 62.5%;
+    background-color:#7de8d3;
 }
 h1{
     height: 2em;
@@ -103,9 +104,6 @@ li a{
 #bio li a, #port li a{
     color:#02c6a1;
 }
-body#bio{
-    background-color:#7de8d3;
-}
 #contact footer{
     height: 170px;
     position: fixed;
@@ -126,7 +124,7 @@ body#bio{
     color: white;
 }
 #bio p{
-    font-size: 1.2em;
+    font-size: 1.6em;
     color:#02c6a1;
     font-family: Give You Glory, cursive;
     margin-top: 200px;
@@ -310,6 +308,9 @@ figcaption{
     filter:grayscale(80%) opacity(.5);
 
 }
+.hoverName{
+    display:none;
+}
 
 /*responsive*/
 
@@ -422,7 +423,7 @@ figcaption{
         z-index: 500;
     }
     #bio .nav-toggle img{
-        margin-top:-30px;
+        margin-top:-15px;
     }
     #home .nav-toggle img{
         margin-top:-26px;
@@ -438,7 +439,7 @@ figcaption{
         margin-top: -630px;
     }
     #bio #name{
-        margin-top:-440px;
+        margin-top:-425px;
         display: block;
         text-align: center;
     }
@@ -466,9 +467,9 @@ figcaption{
         padding-bottom:0px;
     }
     #bio nav.nav-collapse{
-        margin-top: -380px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        margin-top:30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-color:#7de8d3;
     }
     #contact nav.nav-collapse{
