@@ -33,8 +33,9 @@ h1{
     height: 2em;
     text-align: left;
     color:#7de8d3;
-    font-family: starsfromoureyes;
+    font-family: Pacifico, cursive;
     font-size: 5em;
+    letter-spacing:2px;
     opacity: 100%;
     margin-bottom: 5px;
     padding-bottom:10px;
@@ -137,7 +138,8 @@ body#coverPage{
 #coverPage a{
     color:#7de8d3;
     font-size: 1.7em;
-    font-family: starsfromoureyes;
+    font-family: Pacifico, cursive;
+    letter-spacing:2px;
     float:right;
     margin-right: 15%;
     margin-top: 45px;
@@ -193,7 +195,7 @@ form #birds{
     height: auto;
     float:right;
     margin-right: 50px;
-    margin-top: -400px;
+    margin-top: -320px;
     display:inline;
     position: relative;
 }
@@ -376,12 +378,16 @@ figcaption{
         float:right;
         margin-right: 0px;
     }
-    .group{
+    #port figure img{
         height:auto;
-        width: 220px;
+        width: 270px;
         display: block;
         margin:auto;
         margin-top: 15px;
+    }
+    .litebox{
+        pointer-events:none;
+        cursor:default;
     }
     #contact{
         margin-top: 30px;
